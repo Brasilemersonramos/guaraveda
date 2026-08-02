@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaraveda - A Vedação Certa para sua Aplicação</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Link para os ícones do Font Awesome (necessário para o ícone do WhatsApp) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container nav-container">
+            <img src="imagens/logo.png" alt="Guaraveda" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="segmentos.html">Segmentos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <main class="contato-container">
+
+            <!-- Coluna Esquerda: Formulário -->
+            <section class="coluna-formulario">
+                <h2>Atendimento.</h2>
+                <p class="subtitulo">
+                    Entre em contato através do formulário ao lado ou envie seu e-mail para:<br>
+                    <strong>vendas@guaraveda.com.br</strong>
+                </p>
+
+                <form id="form-contato" novalidate>
+                    <div class="linha-dupla">
+                        <div class="campo-grupo">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+                        </div>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="mensagem">O Que você procura?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </div>
+
+                    <div class="botao-container">
+                        <button type="submit" class="btn-enviar">
+                            <i class="fa-solid fa-paper-plane"></i> ENVIAR
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Coluna Direita: Informações de Contato -->
+            <section class="coluna-info">
+                <h2>Contato Direto</h2>
+                <p class="subtitulo">Não hesite em visitar nossa loja e obter a melhor oferta.</p>
+
+                <div class="cards-info">
+
+                    <!-- Card Localização -->
+                    <div class="card-info">
+                        <div class="icone">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h3>Localização</h3>
+                            <p>Rua Alberto Carvalho Filho, 95,<br>Bonsucesso, Cep: 85060-510,<br>Guarapuava – PR</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Email -->
+                    <div class="card-info">
+                        <div class="icone">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h3>Email</h3>
+                            <p>vendas@guaraveda.com.br</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Comercial -->
+                    <div class="card-info">
+                        <div class="icone">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h3>Comercial</h3>
+                            <p>(42) 3627-4141</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <script src="js/contato.js"></script>
+    </body>
+</html>

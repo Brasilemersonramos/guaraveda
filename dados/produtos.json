@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+
+    "ativo": true,
+
+    "categoriaId": 1,
+
+    "subcategoriaId": 1,
+
+    "sku": "ACP-GR-0001",
+
+    "nome": "Acoplamento GR",
+
+    "descricao": "Acoplamento elástico para transmissão de torque.",
+
+    "pasta": "acoplamentos",
+
+    "imagem": "acoplamento_gr.jpg",
+
+    "material": "Borracha",
+
+    "cor": "Preto",
+
+    "dureza": "",
+
+    "temperatura": "",
+
+    "pressao": "",
+
+    "diametroInterno": "",
+
+    "diametroExterno": "",
+
+    "espessura": "",
+
+    "aplicacao": "Industrial",
+
+    "seo": "acoplamento-gr",
+
+    "destaque": false,
+
+    "novo": true
+  }
+]

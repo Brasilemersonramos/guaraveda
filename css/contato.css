@@ -1,0 +1,172 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Layout Principal em Grid */
+.contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 60px auto; /* Centraliza horizontalmente e dá espaçamento do cabeçalho */
+    padding: 0 20px;
+}
+
+/* Títulos e Subtítulos */
+.coluna-formulario h2,
+.coluna-info h2 {
+    font-size: 1.8rem;
+    color: #2b2b2b;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: left; /* Garante alinhamento à esquerda na área de contato */
+}
+
+.subtitulo {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Formulário */
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linha-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+    .campo-grupo label {
+        font-size: 0.9rem;
+        color: #444444;
+    }
+
+    .campo-grupo input,
+    .campo-grupo textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #7c8894;
+        border-radius: 4px;
+        font-size: 0.95rem;
+        color: #333;
+        outline: none;
+        transition: border-color 0.2s;
+    }
+
+        .campo-grupo input::placeholder {
+            color: #aaa;
+        }
+
+        .campo-grupo input:focus,
+        .campo-grupo textarea:focus {
+            border-color: #b03a5b;
+        }
+
+    .campo-grupo textarea {
+        resize: vertical;
+    }
+
+/* Botão Enviar */
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-enviar {
+    background: none;
+    border: none;
+    color: #c44067;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s, transform 0.1s;
+}
+
+    .btn-enviar:hover {
+        color: #a02e50;
+        transform: translateY(-1px);
+    }
+
+/* Coluna de Informações Diretas */
+.cards-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-info {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card-info:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-info .icone {
+        font-size: 2.2rem;
+        color: #3a4252;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+
+    .card-info .detalhes h3 {
+        font-size: 1.2rem;
+        color: #2b2b2b;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+
+    .card-info .detalhes p {
+        font-size: 0.9rem;
+        color: #555555;
+        line-height: 1.4;
+    }
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 30px auto;
+    }
+
+    .linha-dupla {
+        grid-template-columns: 1fr;
+    }
+}
