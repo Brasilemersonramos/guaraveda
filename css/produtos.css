@@ -1,0 +1,224 @@
+﻿/* ==========================
+   TOPO
+========================== */
+
+.produtos-header {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+    .produtos-header h1 {
+        color: var(--azul);
+        font-size: 2.6rem;
+        max-width: 1000px;
+        margin: auto auto 40px;
+    }
+
+/* Pesquisa */
+
+.busca-produto {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+    .busca-produto input {
+        flex: 1;
+        padding: 18px;
+        border: none;
+        outline: none;
+    }
+
+    .busca-produto button {
+        width: 60px;
+        border: none;
+        background: #666;
+        color: white;
+        cursor: pointer;
+    }
+
+/* Ordenação */
+
+.ordenacao {
+    margin-top: 40px;
+}
+
+    .ordenacao select {
+        padding: 12px 20px;
+        min-width: 300px;
+    }
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.catalogo-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+/* ==========================
+   GRID PRODUTOS
+========================== */
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.produto-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+    .produto-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    .produto-imagem {
+    width: 100%;
+    display: block;
+}
+
+.produto-info {
+    padding: 15px 20px;
+    text-align: center;
+    min-height: 50px;
+}
+
+.produto-logo {   
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 15px 0 0 15px;
+    border-radius: 5px;
+}
+
+.produto-info h3 {
+    color: var(--azul);
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+/*.produto-info a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 600;
+}*/
+
+.produto-info .saiba-mais{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 12px 22px;
+
+    /* Gradiente moderno*/
+    background: linear-gradient(135deg,#28a745,#20c997);
+
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+
+}
+
+/* Ícone*/
+
+.produto-info .icone{
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* Hover geral*/
+
+.produto-info .saiba-mais:hover{
+    background: linear-gradient(135deg,#003366,#00509e);
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/*Animação da seta*/
+.produto-info .saiba-mais:hover .icone{
+    transform: translateX(5px);
+}
+
+
+    /*.produto-info a:hover {
+        color: var(--azul);
+    }*/
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar-categorias {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+    .sidebar-categorias h2 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-categorias ul {
+        list-style: none;
+    }
+
+    .sidebar-categorias li {
+        margin-bottom: 2px;
+    }
+
+    .sidebar-categorias a {
+        text-decoration: none;
+        color: var(--azul);
+    }
+
+        .sidebar-categorias a:hover {
+            color: var(--verde);
+        }
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:992px) {
+
+    .catalogo-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-produtos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px) {
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos-header h1 {
+        font-size: 2rem;
+    }
+}

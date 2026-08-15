@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "categoriaId": 1,
+    "nome": "Acoplamento GR"
+  },
+  {
+    "id": 2,
+    "categoriaId": 1,
+    "nome": "Acoplamento MN"
+  },
+  {
+    "id": 3,
+    "categoriaId": 2,
+    "nome": "O-Ring"
+  },
+  {
+    "id": 4,
+    "categoriaId": 2,
+    "nome": "X-Ring"
+  },
+  {
+    "id": 5,
+    "categoriaId": 2,
+    "nome": "V-Ring"
+  }
+]

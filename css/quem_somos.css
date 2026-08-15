@@ -1,0 +1,118 @@
+﻿/* =========================
+   QUEM SOMOS
+========================= */
+
+.banner-institucional {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+    .banner-institucional img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+    .banner-overlay h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .banner-overlay h2 {
+        color: var(--branco);
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+.quem-somos {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+    .quem-somos h2 {
+        margin-bottom: 30px;
+    }
+
+    .quem-somos p {
+        max-width: 900px;
+        margin: 0 auto 25px auto;
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+.destaques {
+    background: #f5f5f5;
+    padding: 80px 0;
+}
+
+    .destaques .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+.destaque-card {
+    background: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+    .destaque-card h3 {
+        color: var(--azul);
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+.localizacao {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+    .localizacao h2 {
+        color: var(--azul);
+        margin-bottom: 30px;
+    }
+
+    .localizacao p {
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+@media(max-width:768px) {
+
+    .banner-institucional {
+        height: 300px;
+    }
+
+    .banner-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .banner-overlay h2 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,106 @@
+﻿/* =====================================
+   SEGMENTOS
+   ===================================== */
+
+.titulo-pagina {
+    padding: 40px 20px 30px;
+    text-align: center;
+}
+
+    .titulo-pagina h1 {
+        color: var(--azul);
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .titulo-pagina p {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+.segmentos-grid {
+    padding-bottom: 80px;
+}
+
+.grid-segmentos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+
+.segmento-card {
+    text-decoration: none;
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    transition: all .3s ease;
+}
+
+    .imagem-container img {
+        width: 100%;
+        display: block;
+        transition: transform .5s ease;
+    }
+
+.segmento-card:hover img {
+    transform: scale(1.08);
+}
+
+.segmento-card:hover .imagem-container {
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient( transparent, rgba(31,45,134,.85) );
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.segmento-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.segmento-card h3 {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--azul);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.menu-ativo {
+    color: var(--verde) !important;
+}
+
+@media(max-width:992px) {
+
+    .grid-segmentos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px) {
+
+    .titulo-pagina h1 {
+        font-size: 2rem;
+    }
+
+    .grid-segmentos {
+        grid-template-columns: 1fr;
+    }
+}
