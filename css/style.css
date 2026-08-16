@@ -41,7 +41,7 @@ header {
 .logo {
     height: 70px;
     margin-left: -60px;
-    border-radius: 5%;
+    border-radius: 8px;
 }
 
 nav ul {
