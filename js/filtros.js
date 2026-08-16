@@ -15,8 +15,8 @@
     // 0. MAPEAMENTO DE ROTAS DA PÁGINA "SAIBA MAIS"
     // Adicione aqui se alguma categoria não seguir o padrão /html/{categoria}_saibamais.html
     const rotasSaibaMais = {
-        "acoplamentos": "../html/acoplamentos_saibamais.html",
-        "aneis": "../html/aneis_saibamais.html"
+        "acoplamentos": ".../html/acoplamentos_saibamais.html",
+        "aneis": ".../html/aneis_saibamais.html"
     };
 
     // Função auxiliar para obter a URL correta de uma categoria
